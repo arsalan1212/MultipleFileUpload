@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arsalankhan.multipilefileupload.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multi File Uploader"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_display"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_display"
+        android:layout_marginTop="10dp"
+        android:text="Upload File"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="20dp"
+        android:onClick="UploadFile"
+        android:textColor="#fff"
+        android:id="@+id/upload_btn"
+        android:background="@drawable/upload_btn_bg"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/upload_btn"
+        android:layout_marginTop="20dp"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
